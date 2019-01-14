@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Burse</title>
+      <link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="public/css/jquery.fancybox.min.css">
+      <link rel="stylesheet" type="text/css" href="public/css/ublue_ImageCarousel.css">
+      <link rel="stylesheet" type="text/css" href="public/css/component.css">
+      <link rel="stylesheet" type="text/css" href="public/css/style.css">
+      <link rel="stylesheet" type="text/css" href="public/css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="public/css/owl.carousel.min.css">
+      <link rel="stylesheet" type="text/css" href="public/css/font-awesome.min.css">
+      <link rel="shortcut icon" type="image/png" href="public/images/logo-favicon.png" />
+   </head>
+   <body>
+      <div id="parent_block">
+         <header class="sticky-top">
+            <div class="container-fluid bg-lightblue">
+               <div class="container">
+                  <nav class="navbar navbar-toggleable-md navbar-inverse bg-lightblue px-1 px_md_0">
+                     <button class="navbar-toggler navbar-toggler-right bg_00436d outline_n" type="button" data-toggle="collapse"
+                        data-target=".burger_menu_show" aria-controls="burger_menu_show"
+                        aria-expanded="false" aria-label="Toggle navigation" style="right: 0 !important;">
+                     <i class="fa fa-bars text-white"></i>
+                     </button>
+                     <a href="./" class="navbar-brand"><img src="public/images/logo.png" width="137" height="61" alt="logo"></a>
+                     <div class="collapse navbar-collapse justify-content-end burger_menu_show" id="burger_menu_show">
+                        <ul class="navbar-nav arial-b ml-auto">
+                           <li class="nav-item ml-2 ml_md_0 my_md_2">
+                              <a href="./" class="nav-link f-s-14 btn bg-blue text-white"><b>Faq</b></a>
+                           </li>
+                           <li class="nav-item ml-2 ml_md_0 my_md_2">
+                              <a href="./" class="nav-link f-s-14 btn bg-blue text-white"><b>About us</b></a>
+                           </li>
+                           <li class="nav-item ml-2 ml_md_0 my_md_2">
+                              <a href="./" class="nav-link f-s-14 btn bg-blue text-white"><b>Auction Types</b></a>
+                           </li>
+                           <li class="nav-item ml-2 ml_md_0 my_md_2">
+                              <a href="./" class="nav-link f-s-14 btn bg-blue text-white"><b>Contact us</b></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+            <div class="container-fluid bg-mugseri">
+               <div class="container bg-mugseri py-0">
+                  <nav class="navbar navbar-toggleable-md px-0 py-0">
+                     <div class="text-center" style="line-height: initial;">
+                        <button class="navbar-toggler navbar-toggler-left bg_00436d outline_n top-3-px" type="button" data-toggle="collapse"
+                           data-target=".burger_menu_two_show" aria-controls="burger_menu_two_show"
+                           aria-expanded="false" aria-label="Toggle navigation" style="left: 0 !important;">
+                        <i class="fa fa-bars text-white"></i>
+                        </button>
+                        <ul class="navbar-nav arial-b ml-auto justify-content-between align-items-baseline d-flex d-lg-none mobile_lang_style languages">
+                           <li class="nav-item pl-3"><a href="#" class="nav-link text-white active">Eng</a></li>
+                           <li class="nav-item pl-3"><a href="#" class="nav-link text-white">Arm</a></li>
+                           <li class="nav-item pl-3"><a href="#" class="nav-link text-white">Rus</a></li>
+                        </ul>
+                     </div>
+                     <div class="collapse navbar-collapse burger_menu_two_show" id="burger_menu_two_show">
+                        <ul class="navbar-nav arial-b mr-auto justify-content-between align-items-center text-center text-lg-left">
+                           <li class="nav-item">
+                              <a href="#" class="nav-link text-white f-s-15 active text-uppercase"><b>Login</b></a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="#" class="nav-link text-white f-s-15 active text-uppercase"><b>Registration</b></a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link text-white f-s-15 text-uppercase" href="#" id="calendar"><b>Calendar</b></a>
+                           </li>
+                           <li class="nav-item dropdown">
+                              <a class="nav-link text-white f-s-15 text-uppercase" id="dropdownMenuLink" data-toggle="dropdown"
+                                 aria-haspopup="true" aria-expanded="false" href="#"><b>Category</b></a>
+                              <ul class="dropdown-menu f-s-13 dr_menu blue_dropdown_menu_style min-width-18rem" role="menu">
+                                 <li class="p-0 hover-bg-blue">
+                                    <a href="#" class="custom_hover_red d-block nav-link px-2">Category name</a>
+                                 </li>
+                                 <li class="p-0 hover-bg-blue">
+                                    <a href="#" class="custom_hover_red d-block nav-link px-2">Category name</a>
+                                 </li>
+                                 <li class="p-0 hover-bg-blue">
+                                    <a href="#" class="custom_hover_red d-block nav-link px-2">Category name</a>
+                                 </li>
+                                 <li class="p-0 hover-bg-blue">
+                                    <a href="#" class="custom_hover_red d-block nav-link px-2">Category name</a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                        <!-- search -->
+                        <div class="column ml-auto">
+                           <div id="sb-search" class="sb-search">
+                              <form>
+                                 <input type="search" name="search" value="search" placeholder="Search" class="sb-search-input f-s-15 search-tooltip" />
+                                 <input class="sb-search-submit" type="submit" value="_search">
+                                 <span class="sb-icon-search"><img src="public/images/search_icon.png" alt="search" width="18" class="mb-6-px"></span>
+                              </form>
+                           </div>
+                        </div>
+                        <!-- search -->
+                        <ul class="navbar-nav arial-b justify-content-between d-none d-lg-flex languages align-items-center">
+                           <li class="nav-item enflag"><a href="#" class="nav-link text-white active">Eng</a></li>
+                           <li class="nav-item hyflag"><a href="#" class="nav-link text-white">Arm</a></li>
+                           <li class="nav-item ruflag"><a href="#" class="nav-link text-white">Rus</a></li>
+                        </ul>
+                        <span data-toggle="modal" data-target="#call-modal" class="d-flex pb-lg-0 pb-2 mt-lg-0 mt-3 justify-content-center align-items-center mx-3"><i class="fa fa-mobile text-white fa-lg cursor-hand" aria-hidden="true"></i></span>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </header>
+         <!--end header -->
+         <section id="section">
+            <div class="owl-carousel owl-theme carousel owl-carousel-parent">
+               <div class="p-r">
+                  <div class="container owl-container-overlay">
+                     <div class="owl-text-overlay hidden-xs w-100">
+                        <div class="row align-items-center">
+                           <div class="col-6">
+                              <h3 class="owl-title text-white mb-4 parent-slider-text-size">Lorem</h3>
+                              <p class="owl-caption hidden-sm mb-0"><a href="#"
+                                 class="btn bg-lightblue text-white text-uppercase rounded-0 parent-slider-text-size">more</a></p>
+                           </div>
+                           <div class="col-6">
+                              <div class="float-right bg-white py-3 b-radius-5">
+                                 <div class="px-2 parent-slider-text-size">
+                                    <span class="bg-seri text-white p-1 arial-b b-radius-5 time"></span>
+                                    <span class="arial text-green date">
+                                    	<i class="day"></i>
+                                    	<i class="month"></i>
+                                    	<b class="year"></b>
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#"><img src="public/images/slide_one.jpg" alt="slider"></a>
+               </div>
+               <div class="p-r">
+                  <div class="container owl-container-overlay">
+                     <div class="owl-text-overlay hidden-xs w-100">
+                        <div class="row align-items-center">
+                           <div class="col-6">
+                              <h3 class="owl-title text-white mb-4 parent-slider-text-size">Lorem</h3>
+                              <p class="owl-caption hidden-sm mb-0"><a href="#"
+                                 class="btn bg-lightblue text-white text-uppercase rounded-0 parent-slider-text-size">more</a></p>
+                           </div>
+                           <div class="col-6">
+                              <div class="float-right bg-white py-3 b-radius-5">
+                                 <div class="px-2 parent-slider-text-size">
+                                    <span class="bg-seri text-white p-1 arial-b b-radius-5 time"></span>
+                           			<span class="arial text-green date">
+                           				<i class="day"></i>
+                           				<i class="month"></i>
+                           				<b class="year"></b>
+                           			</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#"><img src="public/images/slide_two.jpg" alt="slider"></a>
+               </div>
+            </div>
+            <div class="container">
+               <h4 class="text-grey pt-5 pb-4 arial-b text-center-599">
+                  <strong>Expected lots</strong>
+               </h4>
+               <div class="px-5">
+                  <div class="owl-carousel owl-theme carousel owl-carousel-auction owl-carousel-auction1">
+                     <div class="item h-100">
+                        <div class="card h-100 bg-f4f4f4 border-0">
+                           <div>
+                              <a href="#"><img src="public/images/no-image.png" alt="auction image" class="card-img-top img-fluid"></a>
+                           </div>
+                           <div class="card-block p-0 bg-f4f4f4">
+                              <p class="text-muted mb-0 f-s-12 mt-1">2018-11-02 04:00</p>
+                              <h6 class="card-title text_ellipsis_height">
+                                 <a href="#" class="text-muted f-s-15 arial-b"><b>Opel</b></a>
+                              </h6>
+                              <hr>
+                              <p class="card-text text-muted mb-0 f-s-12">Dead Line<span
+                                 class="f-s-12 text-orange float-right arial-b">2018-11-02 04:00</span>
+                              </p>
+                              <p class="card-text text-muted mb-0 f-s-12 mb-2">Current Bid<span
+                                 class="f-s-12 text-green float-right arial-b">1000<b class="icon-dram"></b></span>
+                              </p>
+                           </div>
+                           <div class="card-footer bg-f4f4f4 border-0 p-0">
+                              <button class="text_d_none my-2 btn btn_b5d2e5 px-4 border-r-20 showModal"><b>View</b></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item h-100">
+                        <div class="card h-100 bg-f4f4f4 border-0">
+                           <div>
+                              <a href="#"><img src="public/images/no-image.png" alt="auction image" class="card-img-top img-fluid"></a>
+                           </div>
+                           <div class="card-block p-0 bg-f4f4f4">
+                              <p class="text-muted mb-0 f-s-12 mt-1">2018-11-02 04:00</p>
+                              <h6 class="card-title text_ellipsis_height">
+                                 <a href="#" class="text-muted f-s-15 arial-b"><b>Opel</b></a>
+                              </h6>
+                              <hr>
+                              <p class="card-text text-muted mb-0 f-s-12">Dead Line<span
+                                 class="f-s-12 text-orange float-right arial-b">2018-11-02 04:00</span>
+                              </p>
+                              <p class="card-text text-muted mb-0 f-s-12 mb-2">Current Bid<span
+                                 class="f-s-12 text-green float-right arial-b">1000<b class="icon-dram"></b></span>
+                              </p>
+                           </div>
+                           <div class="card-footer bg-f4f4f4 border-0 p-0">
+                              <button class="text_d_none my-2 btn btn_b5d2e5 px-4 border-r-20 showModal"><b>View</b></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item h-100">
+                        <div class="card h-100 bg-f4f4f4 border-0">
+                           <div>
+                              <a href="#"><img src="public/images/no-image.png" alt="auction image" class="card-img-top img-fluid"></a>
+                           </div>
+                           <div class="card-block p-0 bg-f4f4f4">
+                              <p class="text-muted mb-0 f-s-12 mt-1">2018-11-02 04:00</p>
+                              <h6 class="card-title text_ellipsis_height">
+                                 <a href="#" class="text-muted f-s-15 arial-b"><b>Opel</b></a>
+                              </h6>
+                              <hr>
+                              <p class="card-text text-muted mb-0 f-s-12">Dead Line<span
+                                 class="f-s-12 text-orange float-right arial-b">2018-11-02 04:00</span>
+                              </p>
+                              <p class="card-text text-muted mb-0 f-s-12 mb-2">Current Bid<span
+                                 class="f-s-12 text-green float-right arial-b">1000<b class="icon-dram"></b></span>
+                              </p>
+                           </div>
+                           <div class="card-footer bg-f4f4f4 border-0 p-0">
+                              <button class="text_d_none my-2 btn btn_b5d2e5 px-4 border-r-20 showModal"><b>View</b></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item h-100">
+                        <div class="card h-100 bg-f4f4f4 border-0">
+                           <div>
+                              <a href="#"><img src="public/images/no-image.png" alt="auction image" class="card-img-top img-fluid"></a>
+                           </div>
+                           <div class="card-block p-0 bg-f4f4f4">
+                              <p class="text-muted mb-0 f-s-12 mt-1">2018-11-02 04:00</p>
+                              <h6 class="card-title text_ellipsis_height">
+                                 <a href="#" class="text-muted f-s-15 arial-b"><b>Opel</b></a>
+                              </h6>
+                              <hr>
+                              <p class="card-text text-muted mb-0 f-s-12">Dead Line<span
+                                 class="f-s-12 text-orange float-right arial-b">2018-11-02 04:00</span>
+                              </p>
+                              <p class="card-text text-muted mb-0 f-s-12 mb-2">Current Bid<span
+                                 class="f-s-12 text-green float-right arial-b">1000<b class="icon-dram"></b></span>
+                              </p>
+                           </div>
+                           <div class="card-footer bg-f4f4f4 border-0 p-0">
+                              <button class="text_d_none my-2 btn btn_b5d2e5 px-4 border-r-20 showModal"><b>View</b></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item h-100">
+                        <div class="card h-100 bg-f4f4f4 border-0">
+                           <div>
+                              <a href="#"><img src="public/images/no-image.png" alt="auction image" class="card-img-top img-fluid"></a>
+                           </div>
+                           <div class="card-block p-0 bg-f4f4f4">
+                              <p class="text-muted mb-0 f-s-12 mt-1">2018-11-02 04:00</p>
+                              <h6 class="card-title text_ellipsis_height">
+                                 <a href="#" class="text-muted f-s-15 arial-b"><b>Opel</b></a>
+                              </h6>
+                              <hr>
+                              <p class="card-text text-muted mb-0 f-s-12">Dead Line<span
+                                 class="f-s-12 text-orange float-right arial-b">2018-11-02 04:00</span>
+                              </p>
+                              <p class="card-text text-muted mb-0 f-s-12 mb-2">Current Bid<span
+                                 class="f-s-12 text-green float-right arial-b">1000<b class="icon-dram"></b></span>
+                              </p>
+                           </div>
+                           <div class="card-footer bg-f4f4f4 border-0 p-0">
+                              <button class="text_d_none my-2 btn btn_b5d2e5 px-4 border-r-20 showModal"><b>View</b></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <h4 class="text-grey pt-5 pb-4 arial-b text-center-599">
+                  <strong>Active lots</strong>
+               </h4>
+               <div class="px-5">
+                  <div class="owl-carousel owl-theme carousel owl-carousel-auction owl-carousel-auction2">
+                     <div class="item h-100">
+                        <div class="card h-100 bg-f4f4f4 border-0">
+                           <div>
+                              <a href="#"><img src="public/images/no-image.png" alt="auction image" class="card-img-top img-fluid"></a>
+                           </div>
+                           <div class="card-block p-0 bg-f4f4f4">
+                              <p class="text-muted mb-0 f-s-12 mt-1">2018-11-02 04:00</p>
+                              <h6 class="card-title text_ellipsis_height">
+                                 <a href="#" class="text-muted f-s-15 arial-b"><b>Opel</b></a>
+                              </h6>
+                              <hr>
+                              <p class="card-text text-muted mb-0 f-s-12">Dead Line<span
+                                 class="f-s-12 text-orange float-right arial-b">2018-11-02 04:00</span>
+                              </p>
+                              <p class="card-text text-muted mb-0 f-s-12 mb-2">Current Bid<span
+                                 class="f-s-12 text-green float-right arial-b">1000<b class="icon-dram"></b></span>
+                              </p>
+                           </div>
+                           <div class="card-footer bg-f4f4f4 border-0 p-0">
+                              <button class="text_d_none my-2 btn btn_b5d2e5 px-4 border-r-20 showModal"><b>View</b></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item h-100">
+                        <div class="card h-100 bg-f4f4f4 border-0">
+                           <div>
+                              <a href="#"><img src="public/images/no-image.png" alt="auction image" class="card-img-top img-fluid"></a>
+                           </div>
+                           <div class="card-block p-0 bg-f4f4f4">
+                              <p class="text-muted mb-0 f-s-12 mt-1">2018-11-02 04:00</p>
+                              <h6 class="card-title text_ellipsis_height">
+                                 <a href="#" class="text-muted f-s-15 arial-b"><b>Opel</b></a>
+                              </h6>
+                              <hr>
+                              <p class="card-text text-muted mb-0 f-s-12">Dead Line<span
+                                 class="f-s-12 text-orange float-right arial-b">2018-11-02 04:00</span>
+                              </p>
+                              <p class="card-text text-muted mb-0 f-s-12 mb-2">Current Bid<span
+                                 class="f-s-12 text-green float-right arial-b">1000<b class="icon-dram"></b></span>
+                              </p>
+                           </div>
+                           <div class="card-footer bg-f4f4f4 border-0 p-0">
+                              <button class="text_d_none my-2 btn btn_b5d2e5 px-4 border-r-20 showModal"><b>View</b></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item h-100">
+                        <div class="card h-100 bg-f4f4f4 border-0">
+                           <div>
+                              <a href="#"><img src="public/images/no-image.png" alt="auction image" class="card-img-top img-fluid"></a>
+                           </div>
+                           <div class="card-block p-0 bg-f4f4f4">
+                              <p class="text-muted mb-0 f-s-12 mt-1">2018-11-02 04:00</p>
+                              <h6 class="card-title text_ellipsis_height">
+                                 <a href="#" class="text-muted f-s-15 arial-b"><b>Opel</b></a>
+                              </h6>
+                              <hr>
+                              <p class="card-text text-muted mb-0 f-s-12">Dead Line<span
+                                 class="f-s-12 text-orange float-right arial-b">2018-11-02 04:00</span>
+                              </p>
+                              <p class="card-text text-muted mb-0 f-s-12 mb-2">Current Bid<span
+                                 class="f-s-12 text-green float-right arial-b">1000<b class="icon-dram"></b></span>
+                              </p>
+                           </div>
+                           <div class="card-footer bg-f4f4f4 border-0 p-0">
+                              <button class="text_d_none my-2 btn btn_b5d2e5 px-4 border-r-20 showModal"><b>View</b></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item h-100">
+                        <div class="card h-100 bg-f4f4f4 border-0">
+                           <div>
+                              <a href="#"><img src="public/images/no-image.png" alt="auction image" class="card-img-top img-fluid"></a>
+                           </div>
+                           <div class="card-block p-0 bg-f4f4f4">
+                              <p class="text-muted mb-0 f-s-12 mt-1">2018-11-02 04:00</p>
+                              <h6 class="card-title text_ellipsis_height">
+                                 <a href="#" class="text-muted f-s-15 arial-b"><b>Opel</b></a>
+                              </h6>
+                              <hr>
+                              <p class="card-text text-muted mb-0 f-s-12">Dead Line<span
+                                 class="f-s-12 text-orange float-right arial-b">2018-11-02 04:00</span>
+                              </p>
+                              <p class="card-text text-muted mb-0 f-s-12 mb-2">Current Bid<span
+                                 class="f-s-12 text-green float-right arial-b">1000<b class="icon-dram"></b></span>
+                              </p>
+                           </div>
+                           <div class="card-footer bg-f4f4f4 border-0 p-0">
+                              <button class="text_d_none my-2 btn btn_b5d2e5 px-4 border-r-20 showModal"><b>View</b></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item h-100">
+                        <div class="card h-100 bg-f4f4f4 border-0">
+                           <div>
+                              <a href="#"><img src="public/images/no-image.png" alt="auction image" class="card-img-top img-fluid"></a>
+                           </div>
+                           <div class="card-block p-0 bg-f4f4f4">
+                              <p class="text-muted mb-0 f-s-12 mt-1">2018-11-02 04:00</p>
+                              <h6 class="card-title text_ellipsis_height">
+                                 <a href="#" class="text-muted f-s-15 arial-b"><b>Opel</b></a>
+                              </h6>
+                              <hr>
+                              <p class="card-text text-muted mb-0 f-s-12">Dead Line<span
+                                 class="f-s-12 text-orange float-right arial-b">2018-11-02 04:00</span>
+                              </p>
+                              <p class="card-text text-muted mb-0 f-s-12 mb-2">Current Bid<span
+                                 class="f-s-12 text-green float-right arial-b">1000<b class="icon-dram"></b></span>
+                              </p>
+                           </div>
+                           <div class="card-footer bg-f4f4f4 border-0 p-0">
+                              <button class="text_d_none my-2 btn btn_b5d2e5 px-4 border-r-20 showModal"><b>View</b></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--end section -->
+         <footer id="footer">
+            <div class="container-fluid">
+               <div class="container">
+                  <h4 class="text-grey pt-5 arial-b text-center-599">
+                     <strong>News & Events</strong>
+                  </h4>
+                  <div class="px-5 mb-5">
+                     <div class="owl-carousel owl-theme carousel owl-carousel-events">
+                        <div class="item h-100">
+                           <div class="card h-100 border-0">
+                              <div class="card-block px-0">
+                                 <h6 class="card-title text-darkgreen f-s-14 arial-b">Car</h6>
+                                 <div class="d-lg-flex d-block">
+                                    <div><img src="public/images/news_one.jpg" alt="news image" class="float-left pr-3 pt-1 w_120_px" /></div>
+                                    <span class="float-left f-s-12 arial">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="card-footer bg-white border-0 px-0">
+                                 <a href="" class="hover">
+                                 <small class="text-lightgreen text-decoration-und float-right">Read more</small>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item h-100">
+                           <div class="card h-100 border-0">
+                              <div class="card-block px-0">
+                                 <h6 class="card-title text-darkgreen f-s-14 arial-b">Car</h6>
+                                 <div class="d-lg-flex d-block">
+                                    <div><img src="public/images/news_one.jpg" alt="news image" class="float-left pr-3 pt-1 w_120_px" /></div>
+                                    <span class="float-left f-s-12 arial">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="card-footer bg-white border-0 px-0">
+                                 <a href="" class="hover">
+                                 <small class="text-lightgreen text-decoration-und float-right">Read more</small>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item h-100">
+                           <div class="card h-100 border-0">
+                              <div class="card-block px-0">
+                                 <h6 class="card-title text-darkgreen f-s-14 arial-b">Car</h6>
+                                 <div class="d-lg-flex d-block">
+                                    <span class="float-left f-s-12 arial">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="card-footer bg-white border-0 px-0">
+                                 <a href="" class="hover">
+                                 <small class="text-lightgreen text-decoration-und float-right">Read more</small>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item h-100">
+                           <div class="card h-100 border-0">
+                              <div class="card-block px-0">
+                                 <h6 class="card-title text-darkgreen f-s-14 arial-b">Car</h6>
+                                 <div class="d-lg-flex d-block">
+                                    <div><img src="public/images/news_one.jpg" alt="news image" class="float-left pr-3 pt-1 w_120_px" /></div>
+                                    <span class="float-left f-s-12 arial">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="card-footer bg-white border-0 px-0">
+                                 <a href="" class="hover">
+                                 <small class="text-lightgreen text-decoration-und float-right">Read more</small>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container-fluid bg-seri">
+               <div class="container pt-2">
+                  <div class="row py-4">
+                     <div class="col-md-2">
+                        <h6 class="text-white text-uppercase f-s-14 mb-3">Lorem</h6>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                     </div>
+                     <div class="col-md-2">
+                        <h6 class="text-white text-uppercase f-s-14 mb-3">Lorem</h6>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                     </div>
+                     <div class="col-md-2">
+                        <h6 class="text-white text-uppercase f-s-14 mb-3">Lorem</h6>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                     </div>
+                     <div class="col-md-2">
+                        <h6 class="text-white text-uppercase f-s-14 mb-3">Lorem</h6>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                     </div>
+                     <div class="col-md-2">
+                        <h6 class="text-white text-uppercase f-s-14 mb-3">Lorem</h6>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                     </div>
+                     <div class="col-md-2">
+                        <h6 class="text-white text-uppercase f-s-14 mb-3">Lorem</h6>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                        <a href="" class="text-white aboutus d-block f-s-12 foot_text_hover">Lorem ipsum</a>
+                     </div>
+                     <div class="col-md-12 mt-4 pt-3" id="inputs">
+                        <div class="copyright">
+                           <span class="text-seri f-s-12"><i class="fa fa-copyright" aria-hidden="true"></i> <span class="year"></span> All rights reserved</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!--end footer -->
+      </div>
+      <div class="modal fade" id="call-modal" tabindex="-1" role="dialog" aria-labelledby="callModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <img src="public/images/modal-logo.png" alt="modal-logo" width="35" height="35">
+                  <h5 class="text-00436d font-weight-bold modal-title" id="callModalLabel">Call Center</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="col-md-12">
+                     <form id="number-form">
+                        <h6 class="arial-b text-00436d">FeedBack</h6>
+                        <div class="form-group row">
+                           <label for="staticEmail" class="col-md-4 col-form-label">Phone number</label>
+                           <div class="col-md-8">
+                              <input type="text" class="form-control f-s-14 arial-b" id="staticEmail">
+                           </div>
+                        </div>
+                        <div class="form-group mb-0 mx-auto float-right">
+                           <button type="button" name="confirm-button" class="btn bg-blue rounded-0 text-white action-btn">Confirm</button>
+                           <button type="button" class="btn btn-secondary rounded-0"
+                              data-dismiss="modal">Cancel</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="public/js/jquery.min.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+      <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="public/js/socket.io.min.js"></script>
+      <script type="text/javascript" src="public/js/jquery.fancybox.min.js"></script>
+      <script type="text/javascript" src="public/js/notifyMe.min.js"></script>
+      <script type="text/javascript" src="public/js/ublue_ImageCarousel.js"></script>
+      <script type="text/javascript" src="public/js/modernizr.custom.js"></script>
+      <script type="text/javascript" src="public/js/classie.js"></script>
+      <script type="text/javascript" src="public/js/uisearch.js"></script>
+      <script type="text/javascript" src="public/js/script.js"></script>
+      <script type="text/javascript" src="public/js/sweetalert.min.js"></script>
+      <script type="text/javascript" src="public/js/owl.carousel.min.js"></script>
+      <script>
+         new UISearch( document.getElementById( 'sb-search' ) );
+         
+         startCarousel($('.owl-carousel-this-auction'), $('.owl-carousel-this-auction .item'),  1, 1, 1, 1, 1, 1, 3000,false);
+         startCarousel($('.owl-carousel-events'), $('.owl-carousel-events .item'),  3, 3, 3, 2, 2, 1, 3000,false);
+         startCarousel($('.owl-carousel-parent'), $('.owl-carousel-parent .item'),  1, 1, 1, 1, 1, 1, 3000,false);
+         startCarousel($('.owl-carousel-auction1'), $('.owl-carousel-auction1 .item'),  4, 4, 3, 3, 2, 1, 3000,false);
+         startCarousel($('.owl-carousel-auction2'), $('.owl-carousel-auction2 .item'),  4, 4, 3, 3, 2, 1, 3000,false);
+         startCarousel($('.owl-carousel-auction3'), $('.owl-carousel-auction3 .item'),  4, 4, 3, 3, 2, 1, 3000,false);
+         startCarousel($('.owl-carousel-auction-calendar'), $('.owl-carousel-auction-calendar .item'),  4, 4, 3, 3, 2, 1, 3000,false);
+         $('.owl-carousel-auction1,.owl-carousel-auction2,.owl-carousel-auction3,.owl-carousel-events,.owl-carousel-auction-calendar').find('.owl-stage').addClass('card-deck');
+         
+         $(function () {
+         $(".demoG").ublue_ImageCarousel({
+          ubAutoPlay: "off",
+          ubEffect: "fade",
+          ubAutoBtn: "off"
+         });
+         });
+      </script>
+   </body>
+</html>

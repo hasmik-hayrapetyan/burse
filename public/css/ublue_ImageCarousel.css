@@ -1,0 +1,128 @@
+.focusBtn, .focusIndicators a {
+  display: block;
+  background: url(../images/script.png);
+  background-repeat: no-repeat;
+}
+
+.focusArea {
+  margin: 0 auto 15px;
+  position: relative;
+  overflow: hidden;
+}
+.focusCon .title {
+  height: 26px;
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+  background: #000;
+  opacity: .8;
+  filter: Alpha(opacity=80);
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.focusCon .title a {
+  display: block;
+  padding: 0 10px;
+  color: #FFF;
+  position: relative;
+}
+
+.focusIndicators {
+  height: 7px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+
+.focusIndicators a {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 4px;
+  background-position: 0 -50px;
+  font-size: 0;
+  _zoom: 1;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.focusIndicators .current {
+  background-position: -10px -50px;
+}
+
+.focusBtn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 49px;
+  margin-top: -25px;
+  background-color: #606060;
+  cursor: pointer;
+}
+
+.focusPrev {
+  left: 0;
+  background-position: 0 0;
+}
+
+.focusNext {
+  right: 0;
+  background-position: -30px 0;
+}
+
+.focusPrev:hover, .focusNext:hover {
+  background-color: #333;
+}
+
+.focusIndicators img {
+  height: 100%;
+}
+
+.isFocus .focusArea {
+  height: 340px;
+}
+
+/*.events .isFocus .focusArea {*/
+  /*height: 340px;*/
+/*}*/
+
+.isFocus .focusItem {
+  height: 400px;
+}
+.isFocus .focusItem.focusItemNews {
+  height: auto;
+}
+.events .focusArea{
+  overflow: hidden;
+}
+.isFocus .focusCon .title {
+  width: 582px;
+}
+
+/*.demoG .focusItem{ display:none; position:absolute; top:0; left: -3px; }*/
+.demoG .focusIndicators {
+  height: 42px;
+}
+
+.demoG .focusIndicators a {
+  width: 50px;
+  height: 50px;
+  margin: 0 7px;
+  border: 1px solid #9e234e;
+  background: none;
+}
+.focusItem img {
+  max-width: 100%;
+  max-height: 340px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.focusItem.focusItemNews img {
+  max-height: 374px;
+}

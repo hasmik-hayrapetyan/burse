@@ -1,0 +1,34 @@
+<script type="text/javascript" src="public/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="public/js/socket.io.min.js"></script>
+<script type="text/javascript" src="public/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="public/js/notifyMe.min.js"></script>
+<script type="text/javascript" src="public/js/ublue_ImageCarousel.js"></script>
+<script type="text/javascript" src="public/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="public/js/classie.js"></script>
+<script type="text/javascript" src="public/js/uisearch.js"></script>
+<script type="text/javascript" src="public/js/script.js"></script>
+<script type="text/javascript" src="public/js/sweetalert.min.js"></script>
+<script type="text/javascript" src="public/js/owl.carousel.min.js"></script>
+<script>
+    new UISearch( document.getElementById( 'sb-search' ) );
+
+    startCarousel($('.owl-carousel-this-auction'), $('.owl-carousel-this-auction .item'),  1, 1, 1, 1, 1, 1, 3000,false);
+    startCarousel($('.owl-carousel-events'), $('.owl-carousel-events .item'),  3, 3, 3, 2, 2, 1, 3000,false);
+    startCarousel($('.owl-carousel-parent'), $('.owl-carousel-parent .item'),  1, 1, 1, 1, 1, 1, 3000,false);
+    startCarousel($('.owl-carousel-auction1'), $('.owl-carousel-auction1 .item'),  4, 4, 3, 3, 2, 1, 3000,false);
+    startCarousel($('.owl-carousel-auction2'), $('.owl-carousel-auction2 .item'),  4, 4, 3, 3, 2, 1, 3000,false);
+    startCarousel($('.owl-carousel-auction3'), $('.owl-carousel-auction3 .item'),  4, 4, 3, 3, 2, 1, 3000,false);
+    startCarousel($('.owl-carousel-auction-calendar'), $('.owl-carousel-auction-calendar .item'),  4, 4, 3, 3, 2, 1, 3000,false);
+    $('.owl-carousel-auction1,.owl-carousel-auction2,.owl-carousel-auction3,.owl-carousel-events,.owl-carousel-auction-calendar').find('.owl-stage').addClass('card-deck');
+
+    $(function () {
+        $(".demoG").ublue_ImageCarousel({
+            ubAutoPlay: "off",
+            ubEffect: "fade",
+            ubAutoBtn: "off"
+        });
+    });
+</script>
